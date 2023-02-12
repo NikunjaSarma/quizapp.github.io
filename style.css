@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
+:root {
+    --clr-neutral-900: hsl(207, 19%, 9%);
+    --clr-neutral-800: hsl(207, 19%, 15%);
+    --clr-neutral-700: hsl(207, 19%, 25%);
+    --clr-neutral-600: hsl(207, 19%, 35%);
+    --clr-neutral-500: hsl(207, 19%, 45%);
+    --clr-neutral-400: hsl(207, 19%, 55%);
+    --clr-neutral-300: hsl(207, 19%, 65%);
+    --clr-neutral-200: hsl(207, 19%, 75%);
+    --clr-neutral-100: hsl(207, 19%, 85%);
+    --clr-neutral-50: hsl(207, 19%, 95%);
+    --clr-accent-400: hsl(157, 100%, 40%);
+    --clr-accent-300: hsl(142, 90%, 71%);
+    --clr-accent-200: hsl(142, 90%, 81%);
+    --clr-accent-100: hsl(142, 90%, 91%);
+    --clr-accent-50: hsl(142, 90%, 96%);
+    --clr-primary-400: hsl(239, 90%, 61%);
+    --clr-primary-4000: hsl(222, 90%, 61%);
+    --clr-primary-300: hsl(207, 90%, 71%);
+    --clr-primary-200: hsl(207, 90%, 81%);
+    --clr-primary-100: hsl(207, 90%, 91%);
+    --clr-primary-50: hsl(207, 90%, 96%);
+    --clr-secondary-400: hsl(207, 90%, 61%);
+    --clr-secondary-300: hsl(207, 90%, 71%);
+    --clr-secondary-200: hsl(207, 90%, 81%);
+    --clr-secondary-100: hsl(207, 90%, 91%);
+    --clr-secondary-50: hsl(207, 90%, 96%);
+    --clr-success-400: hsl(142, 90%, 61%);
+    --clr-success-300: hsl(142, 90%, 71%);
+    --clr-success-200: hsl(142, 90%, 81%);
+    --clr-success-100: hsl(142, 90%, 91%);
+    --clr-success-50: hsl(142, 90%, 96%);
+    --clr-danger-400: hsl(0, 90%, 61%);
+    --clr-danger-4000: hsl(133, 100%, 61%);
+    --clr-danger-300: hsl(0, 90%, 71%);
+    --clr-danger-200: hsl(0, 90%, 81%);
+    --clr-danger-100: hsl(0, 90%, 91%);
+}
+
+
+*,
+*::after,
+*::before {
+
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: var(--clr-neutral-900); */
+    /* color: var(--clr-neutral-50); */
+}
+.nik{
+margin-bottom: 0px;
+}
+.nik2{
+margin-bottom: 0px;
+font-size: 1rem;
+}
+
+h5{
+    margin-top:1px ;
+    margin-bottom:1px ;
+}
+.question{
+    margin-top:1px ;
+    margin-bottom:1px ;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.btnoption {
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(255, 140, 0); */
+
+}
+h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.score{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: var(--clr-neutral-900);
+    text-align: right;
+}
+
+.con {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--clr-neutral-600);
+    display: grid;
+    place-items: center;
+    margin: 0px;
+    padding: 1px;
+}
+
+.card {
+    color: var(--clr-neutral-900);
+    background-size: cover;
+    background-color: var(--clr-neutral-100);
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 500px;
+}
+
+input[type="radio"]+label {
+    padding: 4px;
+    background-color: var(--clr-neutral-800);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    min-width: auto;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    margin: 5px 10px;
+}
+
+input[type="radio"]:checked+label {
+    background: var(--clr-primary-400);
+}
+
+input[type="radio"] +label:hover {
+    background: var(--clr-primary-4000);
+}
+
+input[type="radio"]:disabled+label {
+    background: var(--clr-neutral-600);
+    color: black;
+    cursor: not-allowed;
+}
+
+
+.error+label {
+    background: var(--clr-danger-400) !important;
+    color: white !important;
+
+}
+.correct+label {
+    background: var(--clr-accent-400) !important;
+    color: white !important;
+
+}
+
+
+
+ 
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px;
+}
+
+
+
+.btn1,
+.btn2 {
+    padding: 4px;
+    background-color: var(--clr-neutral-900);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    min-width: auto;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    margin: 5px 10px;
+}
+
+.btn1:hover{
+background: var(--clr-neutral-700);
+}
+.btn1:disabled{
+background: var(--clr-neutral-600);
+color: black;
+cursor: not-allowed;
+}
+.btn2:hover{
+background: var(--clr-neutral-700);
+}
+.btn2:disabled{
+background: var(--clr-neutral-600);
+color: black;
+cursor: not-allowed;
+}
